@@ -24,7 +24,10 @@ namespace CharacterCounter
 
             var characterCounted = characterCounter.CountingChar(csFilesFromDirectory);
 
-            foreach(var n in characterCounted)
+            var sortedList = characterCounted.OrderBy(x => x.Count);
+
+
+            foreach(var n in sortedList)
             {
                 Console.WriteLine($"Character = {n.Character}, Frequency = {n.Count} ");
             }
