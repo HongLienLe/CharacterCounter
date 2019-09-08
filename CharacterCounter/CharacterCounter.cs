@@ -7,13 +7,6 @@ namespace CharacterCounter
     public class CharacterCounter : ICharacterCounter
     {
 
-        ILoadDirectory loadDirectory;
-
-        public CharacterCounter(ILoadDirectory loadDirectory)
-        {
-            this.loadDirectory = loadDirectory;
-        }
-
         public List<CharacterCount> CountingChar(string characters)
         {
             var charArray = characters.ToCharArray();
