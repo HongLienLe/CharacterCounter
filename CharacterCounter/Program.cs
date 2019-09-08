@@ -24,7 +24,6 @@ namespace CharacterCounter
 
             var characterCounted = characterCounter.CountingChar(csFilesFromDirectory);
 
-
             foreach(var n in characterCounted)
             {
                 Console.WriteLine($"Character = {n.Character}, Frequency = {n.Count} ");
